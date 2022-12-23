@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMas List</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-top">
+                <h1>Xmas List</h1>
+            </div>
+            <div class="header-bottom">
+                Spesa Totale:<span class="total-slot">00.00€</span>
+            </div>
+
+        </header>
+
+
+        <!-- MAin -->
+        <main>
+            <!-- Lista -->
+            <ul class="gifts-list">
+                <!-- <li class="gift">
+                    <div class="gift-info">
+                        <h3>Sara</h3>
+                        <p>Bigletti per il cinema</p>
+                    </div>
+                    <div class="gift-price">16.00€</div>
+                    <button class="gift-button">❌</button>
+                </li> -->
+            </ul>
+
+            <!-- Form -->
+            <form  id="gift-form">
+                <div class="form-fields">
+                    <input type="text" placeholder="Nome" id="name-field" required>
+                    <input type="number" placeholder="Prezzo" id="price-field" requrire min="0.01" max="100" step="0.01">
+                    <input type="text" placeholder="Regalo" id="description-field" required>
+                </div>
+                <button type="submit" class="form-button">+</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
